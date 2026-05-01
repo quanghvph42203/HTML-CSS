@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tìm hiểu thẻ img</h1>
+    <!-- Thẻ img - để hiển thị hình ảnh trên website -->
+    <img src="" alt="" />
+    <!-- Thuộc tính "src" được sử dụng để chỉ định đường dẫn tới tập tin hình ảnh (source image file) -->
+    <!-- "alt" alternative - thay thế: để 
+     - hiển thị text khi link ảnh lỗi 
+     - Hỗ trợ trình đọc màn hình (screen reader) cho người khiếm thị 
+     - công cụ tìm kiếm thu nhập dữ liệu trên trang  -->
+    <img
+      src="https://images.unsplash.com/photo-1774719194893-a8e7f20363b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+      alt=""
+    />
+    <!-- Thuộc tính: width, height: được sử dụng để chỉ định kích thước của hình ảnh được hiển thị trên trang web -->
+    <!-- + 1 số chú ý: 
+     - Nếu không set kích thước -> kích thước của ảnh mặc định vốn có 
+     - Nếu set kích thước 1 chiều width, hoặc height -> chiều còn lại sẽ tự căn theo tỉ lệ -->
+    <img
+      src="https://images.unsplash.com/photo-1770041638325-d53de3f936c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"
+      alt="hình ảnh"
+      width="300px"
+      height="300px"
+    />
+    <!-- đường dẫn tương đối <img src="./" alt=""> 
+     trở về thư mục trên 1 cấp <img src="../" alt=""> 
+     đường dẫn tuyệt đối <img src="/" alt=""> -->
+  </body>
+</html>

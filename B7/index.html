@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tìm hiểu thẻ ul, ol, li</h1>
+    <!-- Thẻ ul- un-ordered list : danh sách không có thứ tự  -->
+    <ul>
+      <li>hv1</li>
+      <li>hv2</li>
+      <li>hv3</li>
+      <li>hv4</li>
+      <li>hv5</li>
+    </ul>
+    <!-- Thẻ ol- ordered list : danh sách có thứ tự -->
+    <!-- + Có 2 thuộc tính thông dụng 
+     - reversed: chiều giảm dần 
+     - type: 1 số thuộc tính -->
+    <!-- ol>li*Số lượng -->
+    <!-- ol>li*số lượng{item$} -->
+    <ol reversed>
+      <li>phần tử 1</li>
+      <li>phần tử 2</li>
+      <li>phần tử 3</li>
+      <li>phần tử 4</li>
+      <li>phần tử 5</li>
+    </ol>
+    <ol type="A">
+      <li>phần tử</li>
+      <li>phần tử</li>
+      <li>phần tử</li>
+      <li>phần tử</li>
+      <li>phần tử</li>
+    </ol>
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ol>
+    <ol>
+      <li>hv6</li>
+      <li>hv7</li>
+      <li>hv8</li>
+      <li>hv9</li>
+      <li>hv10</li>
+    </ol>
+    <!-- Thẻ li - list item: là thẻ con trực tiếp của ul, ol -->
+    <!-- Thẻ ul, ol lồng nhau  -->
+    <ol type="I">
+      <li>Mở bài:</li>
+      <li>Thân bài:</li>
+      <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>
+          Lorem ipsum dolor sit amet.
+          <ol type="a">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ol>
+        </li>
+      </ol>
+      <li>Kết bài</li>
+    </ol>
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>
+        Lorem ipsum dolor sit amet.
+        <ul>
+          <li>123</li>
+          <li>
+            12345
+            <ol type="I">
+              <li>hvq1</li>
+              <li>hvq2</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

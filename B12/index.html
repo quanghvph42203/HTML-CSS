@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Triển khai website bằng vscode</h1>
+    <h2>Sơ đồ hoạt động của git</h2>
+    <img
+      src="https://doidev.com/git-co-ban/git-workflow.png"
+      alt=""
+      height="500px"
+    />
+    <!-- Tạo repository trên github: dùng để lưu trữ dự án của bạn trên máy chủ git
+      + B1: truy cập github.com
+      + B2: Click vào new repository 
+      + B3: Đặt tên dự án
+      + B4: Click create
+      + B5: Tạo dự án trên máy tính cá nhân: dùng để code và lưu trữ cục bộ trên máy tính
+      + B6: Khởi tạo git: để khởi tạo một kho lưu trữ git cục bộ - local repo
+      + B7: mở terminal
+      + B8: config mặc định chọn git bash khi mở terminal là powershell
+      + B9: Chọn select default profile -> Chọn git bash
+      + B10: kiểm tra trạng thái của git bằng lệnh: git status
+      + B11: khởi tạo bằng git init
+      + B12: add thư mục dự án vào staging area chờ commit bằng lệnh git add
+      - git add . : add tất cả
+      - git add tên_thư_mục: add lẻ thư mục, tệp
+      + B13: commit và đẩy code lên github  -->
+
+    <!-- 
+     git init:
+      + Khởi tạo một kho lưu trữ (repository) Git trống ngay tại thư mục hiện tại.
+      + Nó tạo ra một thư mục ẩn .git để bắt đầu theo dõi các thay đổi của tệp tin.
+
+      
+     git add [tập-tin]: 
+     + Thêm tập tin vào khu vực staging area (khu vực chờ).
+     EX: git add index.html
+     EX: git add thumuc/
+     git add .: 
+     + Thêm tất cả các thay đổi của các tập tin vào staging area (khu vực chờ).
+
+
+     git commit -m "tin nhắn": 
+     + Xác nhận việc lưu trữ các thay đổi đã add vào lịch sử của Git.
+     + -m "tin nhắn": Đính kèm một ghi chú (message) để bạn biết lần lưu này đã làm những gì.
+     EX: git commit -m "first commit"
+
+
+     git branch -M main:
+     + Đổi tên nhánh mặc định hiện tại thành main. 
+     (Trước đây Git thường để mặc định là master, lệnh này giúp thống nhất tên nhánh chính là main).
+
+
+     git remote add origin https://github.com/quanghvph42203/HTML-CSS.git
+     + Kết nối kho lưu trữ ở máy tính của bạn với kho lưu trữ trực tuyến trên GitHub.
+     + origin: Là tên gợi nhớ (alias) cho đường dẫn URL phía sau để bạn không phải nhập lại cả đoạn link dài mỗi lần dùng.
+
+
+     git push -u origin main:
+     + Đẩy (tải lên) toàn bộ code và lịch sử commit từ nhánh main ở máy tính lên nhánh main trên GitHub (origin).
+     + -u: Thiết lập sự liên kết giữa hai nhánh này. Từ lần sau, bạn chỉ cần gõ git push hoặc git pull mà không cần ghi rõ origin main
+     -->
+  </body>
+</html>
