@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Git branch (Nhánh)</h1>
+    <!-- + Cho phép chúng ta phát triển và quản lý dự án một cách linh hoạt
+     + Giúp chúng ta làm việc độc lập trên các tính năng mới
+     + Khắc phục lỗi và thậm chí thử nghiệm các phiên bản khác nhau mà không làm ảnh hưởng đến nhánh chính (main) -->
+
+    <h2>Kiểm tra nhánh</h2>
+    <!-- + Máy local  - Máy vật lý: git branch
+          + Máy remote - Máy chủ: git branch -a
+                       - Máy chủ: git branch --all -->
+
+    <h2>Để tạo 1 nhánh mới trên máy tính</h2>
+    <!-- + git branch -c ten_nhanh
+  EX: git branch -c congviec1 -->
+
+    <h2>Để chuyển sang nhánh khác</h2>
+    <!-- git checkout ten_nhanh
+   EX: git checkout congviec1 -->
+
+    <h2>Để tạo và chuyển sang nhánh khác luôn</h2>
+    <!-- git checkout -b ten_nhanh
+    EX: git checkout -b congviec2 -->
+
+    <h1>Công việc main</h1>
+
+    <!-- Sau mỗi lần code ở nhánh nào xong thì nhớ xác nhận bằng lệnh:
+     + git add .
+     + git commit -m "mô tả" -->
+
+    <h2>Để đẩy code từng nhánh lên trên github</h2>
+    <!-- + git push -u origin ten_nhanh_can_push
+     EX: git push -u origin congviec2 -->
+    <!-- + tham số "-u" viết tắt cho tham số --set-upstream: thường sử dụng
+      cho lần đầu tiên đẩy code (push)
+      + Từ lần 2 đứng tại nhánh đó chỉ cần dùng lệnh git push -->
+
+    <h2>Xóa nhánh</h2>
+    <!-- LƯU Ý: 
+       - Không thể xóa nhánh khi mình đứng tại nhánh đó để xóa nhánh đó
+       EX: Đang đứng tại nhánh congviec1 thì không thể xóa được nhánh congviec1
+       - Nếu nhánh đang commit rồi mà chưa push lên thì cũng không xóa được
+       - Nếu vẫn muốn xóa thì dùng lệnh: git branch -D ten_nhanh
+       
+       -------Xóa nhánh--------
+       + git branch -d ten_nhanh
+       EX: git branch -d congviec1 -->
+
+       <h2> Để xóa nhánh ở trên github</h2>
+       <!-- + git push -d origin ten_nhanh
+        EX: git push -d origin congviec1 -->
+  </body>
+</html>
