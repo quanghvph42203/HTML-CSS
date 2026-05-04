@@ -1,0 +1,14 @@
+h2 {
+    /* độ trong suốt */
+  /* opacity: 80%; */
+  /* ẩn phần tử khỏi giao diện */
+  /* display: none; */
+  visibility: visible;
+  /* màu nền */
+  background-color: blue;
+}
+body {
+  /* Ảnh nền */
+  background-image: url(./img/download.jpg);
+}
+
