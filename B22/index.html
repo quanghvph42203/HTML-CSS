@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <!-- <style>
+      h1 {
+        color: blue;
+        font-size: 36px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="./">Home</a>
+    <h1>
+      CSS cơ bản- Inline (nội tuyến), internal (nội bộ), and external (css bên
+      ngoài)
+    </h1>
+    <!-- Vị trí đặt CSS: 3 nơi
+     + inline (css nội tuyến): là cách viết mã CSS ngay bên trong phần tử cơ bản HTML
+     EX: <tag style="css"/>
+     EX: <h1 style="color: white;">Css nội tuyến</h1>
+     --- style (kiểu): thuộc tính
+     --- white ( màu trắng): giá trị
+     *** NHƯỢC ĐIỂM:
+     --- Khó thay đổi, mỗi lần thay đổi phải thay đổi một cách riêng lẻ
+     --- Không tái sử dụng được
+     --- Khó quản lý
+     --- Khó tách biệt cấu trúc
+-->
+
+    <!--
+     + internal (css nội bộ): là cách viết mã CSS trong cặp thẻ style ( đặt trong khối head) 
+     EX: <style>css</style>
+     EX: <head>
+        <style>
+            h1 {
+                color: aquamarine;
+                font-size: 30px;
+            }
+        </style>
+     </head>
+     *** ƯU ĐIỂM:
+     --- Code tách biệt với phần tử, có thể áp dụng toàn trang (như ví dụ h1)
+     *** Nhược điểm:
+     --- Vẫn khó quản lý dự án lớn, quá nhiều mã CSS sẽ làm tệp HTML trở nên cồng kềnh
+    -->
+
+    <!--
+     + external (css bên ngoài): trong trường hợp muốn áp dụng cho toàn bộ các file html nằm trên trang web,
+     tránh việc phải copy css ra tất cả các file này
+     EX: <link href="style.css"/>
+     EX: <link rel="stylesheet" href="style.css">
+     + là cách viết mã CSS thành 1 tệp .css quản lý riêng
+     + cần khai báo trong HTML để link đến tệp CSS
+     + rel = "stylesheet" thông báo cho trình duyệt, tải tệp CSS được chỉ định và áp dụng các chỉ định
+     dạng kiểu trong tệp đó cho trang web hiện tại  -->
+  </body>
+</html>
