@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      HTML Table Tutorial: Tìm hiểu cách tạo bảng và các phần tử: tr, td, th,
+      thead, tbody, tfoot
+    </h1>
+    <!-- Sử dụng cặp thẻ <table></table> để vẽ bảng:
+     EX:
+     <table>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+        </tr>
+        <tr>
+            <td>Áo phông</td>
+            <td>1000vnd</td>
+        </tr>
+     </table>
+     + tr - table row: đại diện cho 1 hàng trong bảng HTML
+     + td - table data: đại diện 1 ô dữ liệu trong bảng
+     + th - table header: định nghĩa 1 ô tiêu đề trong bảng
+      -->
+
+    <h1>Học table</h1>
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Lớp</th>
+        <th>Chuyên ngành</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Quang</td>
+        <td>HTML</td>
+        <td>LTW</td>
+      </tr>
+    </table>
+
+    <h1>Table: thead, tbody, tfoot</h1>
+    <!-- thead - table header: định nghĩa phần đầu của bảng (thường chứa các ô tiêu đề
+     "th" của các cột trong bảng)
+     tbody - table body: định nghĩa phần thân của bảng (thường chứa các thẻ "tr" 
+     và các ô dữ liệu "td" tương ứng)
+     tfoot - table footer: định nghĩa phần cuối của bảng ( thường chứa các ô chú thích
+     tổng kết hoặc thông tin cuối cùng về bảng ) -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quần jeans</td>
+          <td>1000vnd</td>
+        </tr>
+        <tr>
+          <td>Áo phông</td>
+          <td>2000vnd</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Tổng cộng</td>
+          <td>3000vnd</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
