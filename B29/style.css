@@ -1,0 +1,9 @@
+/* Áp dụng tất cả các thẻ */
+*{
+    background-color: burlywood;
+    color: blue;
+}
+/* Chọn tất cả các thẻ p có class là intro */
+p.intro{
+    color: aqua;
+}
