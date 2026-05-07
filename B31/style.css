@@ -1,0 +1,13 @@
+/* Chọn tất cả các thẻ p nằm trong thẻ div */
+div p {
+  color: red;
+}
+/* Chọn tất cả các thẻ p nằm trong class item_1 */
+.item_1 p {
+  color: blue;
+}
+
+/* Chọn tất cả các thẻ p là con trực tiếp thẻ div */
+div > p {
+  color: aquamarine;
+}

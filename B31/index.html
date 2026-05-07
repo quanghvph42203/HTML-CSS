@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Combinator selectors p3 - Space - element>element</h1>
+    <!-- 1. Space (khoảng trắng) selector
+     EX: div p -> Chọn tất cả các thẻ p nằm trong thẻ div -->
+    <div>
+      <p>Tiêu đề</p>
+      <p>Tiêu đề 1</p>
+    </div>
+    <div class="item_1">
+      <p>Tiêu đề 2</p>
+      <p>Tiêu đề 3</p>
+    </div>
+
+    <!-- 2. element>element
+     EX: div>p -> Chọn tất cả các thẻ p là con trực tiếp thẻ div -->
+    <div>
+      <p>Nội dung 1</p>
+    </div>
+    <div class="noi_dung">
+      <p>Nội dung 2</p>
+      <span>
+        <p>Nội dung 3</p>
+      </span>
+    </div>
+  </body>
+</html>
