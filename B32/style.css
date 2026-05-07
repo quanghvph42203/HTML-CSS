@@ -1,0 +1,13 @@
+/* Chọn phần tử h2 đầu tiên được đặt ngay sau phần tử h1 */
+h1 + h2 {
+  color: blue;
+}
+/* Chọn phần tử h3 đầu tiên được đặt ngay sau class title */
+.title + h3 {
+  color: red;
+}
+
+/* Chọn tất cả thẻ a nằm sau thẻ div */
+div ~ a {
+  color: brown;
+}
