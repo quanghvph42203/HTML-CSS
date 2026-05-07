@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS Selector cơ bản_ Hiểu về Tên thẻ, ID, và Class</h1>
+    <h2>1. Tag name selector: bổ chọn thẻ</h2>
+    <!-- + Bộ chọn CSS được sử dụng để "tìm" (hoặc chọn) các phần tử HTML mà bạn muốn định kiểu.
+     EX: h1-h6, a, img, ul, li,... -->
+
+    <h1>Tiêu đề lớn nhất</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum quasi
+      suscipit debitis similique deserunt nemo hic soluta cumque excepturi!
+      Officiis, culpa iusto ad doloremque nostrum ut cumque ex assumenda! Quidem
+      .
+    </p>
+
+    <h2>2. Class & ID selector</h2>
+    <!-- id selector: Khi chỉ muốn áp dụng CSS cho 1 phần tử chỉ định
+     nào đó của HTML -> dùng id
+     + id là duy nhất, theo quy chuẩn không cho phép đặt trùng id đã có
+     + id, class không được đặt tên bắt đầu bằng số, nếu có 2 ký tự trở lên
+     nên đặt dấu _ hoặc - để nối
+      -->
+    <h3>Lorem, ipsum dolor.</h3>
+    <h3 id="id1">Lorem, ipsum dolor.</h3>
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <!-- class selector: do không thể sử dụng lại tên id -> trong trường hợp
+     muốn khai báo lặp lại thì dùng class -->
+    <h3 class="class_1">Lorem, ipsum dolor.</h3>
+    <h3>Lorem, ipsum dolor.</h3>
+    <h3 class="class_1 class_2">Lorem, ipsum dolor.</h3>
+    <ul class="item_ul_1">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+  </body>
+</html>
