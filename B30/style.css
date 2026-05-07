@@ -1,0 +1,20 @@
+/* chọn tất cả các thẻ h1,h2 */
+h1,
+h2 {
+  color: red;
+}
+/* chọn tất cả các thẻ p,.demo */
+p,
+.demo {
+  color: aquamarine;
+}
+/* chọn tất cả các thẻ p,#item */
+p,
+#item {
+  color: blue;
+}
+
+/* Chọn tất cả các thẻ đồng thời class name là title và title2 */
+.title.title2{
+  color: burlywood;
+}
