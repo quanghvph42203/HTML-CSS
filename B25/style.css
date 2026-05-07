@@ -1,0 +1,14 @@
+/* Nếu như hộp input được tích chọn thì ta chọn tất cả
+những phần tử img đồng cấp liền sau nó */
+input:checked ~ img {
+  /* 1. Nếu muốn biến mất khỏi giao diện */
+  display: none;
+  /* 2. Biến mất khỏi giao diện, nhưng vẫn chiếm vị trí */
+  visibility: hidden;
+  /* 3. Làm mờ đi */
+  opacity: 0;
+}
+img {
+    /* delay: làm chậm */
+    transition: 1.5s;
+}
