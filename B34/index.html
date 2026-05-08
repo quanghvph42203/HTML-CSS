@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Attribute Selectors part 2</h1>
+    <!--1. [attribute~=value]
+    EX: [title~="pic"] -> Chọn tất cả các thuộc tính: title có chứa từ pic (đơn lẻ) trong giá trị -->
+    <a href="" title="abc pic so 1">click 1</a>
+    <a href="" title="pic so 2">click 2</a>
+    <a href="" title="pic3">click 3</a>
+
+    <!-- 2. [attribute*=value]
+     EX: [title*="pic"] -> Chọn tất cả các thuộc tính: title có chứa
+     chuỗi pic trong giá trị
+     VD: pic 123, abc pic, picabc abd... -->
+    <a href="" title="abd pic so 1">click 1</a>
+    <a href="" title="abd pic so 2">click 2</a>
+    <a href="" title="abdpic">click 3</a>
+
+    <!-- 3. [attribute|=value]
+     EX: [title|="pic"] -> Chọn tất cả các thuộc tính: title có từ duy nhất
+     bắt đầu bằng từ pic
+     VD: pic (duy nhất), pic-123 -->
+    <a href="" title="abc pic so 1">click 1</a>
+    <a href="" title="pic-so-2">click 2</a>
+    <a href="" title="abc pic">click 3</a>
+    <a href="" title="pic">click 4</a>
+
+    <!-- 4. [attribute^=value]
+     EX: [title^="pic"] -> Chọn tất cả các thuộc tính: title
+     bắt đầu bằng từ pic (không quan tâm space đằng sau) -->
+    <a href="" title="abc pic">click 5</a>
+    <a href="" title="pic3">click 6</a>
+    <a href="" title="pic-so-4">click 7</a>
+
+    <!-- 5. [attribute$="value"]
+     EX: [title$="1"] -> Chọn tất cả các thẻ có thuộc tính: title
+     kết thúc bằng ký tự 1 -->
+    <a href="" title="abc pic so 1">click 8</a>
+    <a href="" title="abc-pic">click 6</a>
+    <a href="" title="abc-pic-1">click 9</a>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/* Chọn tất cả các thuộc tính: title có chứa từ pic (đơn lẻ) trong giá trị */
+a[title~="pic"] {
+  color: red;
+}
+
+/* Chọn tất cả các thuộc tính: title có chứa chuỗi pic trong giá trị */
+a[title*="pic"] {
+  color: blue;
+}
+
+/* Chọn tất cả các thuộc tính: title có từ duy nhất bắt đầu bằng từ pic */
+a[title|="pic"] {
+  color: yellow;
+}
+
+/* Chọn tất cả các thuộc tính: title bắt đầu bằng từ pic (không quan tâm space đằng sau) */
+a[title^="pic"] {
+  color: brown;
+}
+
+/* Chọn tất cả các thẻ có thuộc tính: title kết thúc bằng ký tự 1 */
+a[title$="1"] {
+  color: pink;
+}
