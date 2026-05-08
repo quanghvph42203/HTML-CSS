@@ -1,0 +1,13 @@
+/* Chọn tất cả thẻ có thuộc tính (property): href */
+[href] {
+  color: blue;
+}
+/* Tác động đến thẻ a có thuộc tính href */
+a[href] {
+  color: red;
+}
+
+/* Chọn tất cả các thuộc tính có chính xác giá trị: target="_blank" */
+a[target="_blank"] {
+  color: yellow;
+}
