@@ -1,0 +1,9 @@
+/* a:link - Chọn các thẻ a có liên kết chưa click vào */
+.click:link {
+  color: red;
+}
+
+/* a:visited - Chọn các thẻ a có liên kết đã click truy cập --> */
+a:visited {
+  color: yellow;
+}
