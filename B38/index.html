@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pseudo-classes (lớp giả) p4 và thứ tự ưu tiên CSS selector</h1>
+    <h2>:first-child (thẻ con đầu tiên)</h2>
+    <!-- EX:
+     p:first-child - Chọn các thẻ p là thẻ con đầu tiên -->
+    <!--  Áp dụng được mã css -->
+    <div>
+      <p>đoạn văn 1</p>
+      <p>đoạn văn 2</p>
+      <p>đoạn văn 3</p>
+    </div>
+    <!-- Không áp dụng được mã css vì thẻ p không phải là phần tử con đầu tiên -->
+    <div>
+      <h3>Tiêu đề</h3>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+    </div>
+
+    <h2>:last-child (thẻ con cuối cùng)</h2>
+    <!-- EX:
+     p:last-child - Chọn các thẻ p là thẻ con cuối cùng -->
+    <!--  Áp dụng được mã css -->
+    <div>
+      <h2>Tiêu đề 1</h2>
+      <p>đoạn văn 1</p>
+      <p>đoạn văn 2</p>
+      <p>đoạn văn 3</p>
+    </div>
+    <!-- Không áp dụng được mã css vì thẻ p không phải là phần tử con cuối cùng -->
+    <div>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+      <h3>Tiêu đề 2</h3>
+    </div>
+
+    <h2>:nth-child(n): thẻ con thứ n từ trên xuống</h2>
+    <!-- EX:
+     p:nth-child(2) - Chọn các thẻ p là thẻ con thứ 2 từ trên xuống -->
+    <div>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+      <p>nội dung 4</p>
+      <p>nội dung 5</p>
+    </div>
+
+    <h2>:nth-last-child(n): thẻ con thứ n từ dưới lên</h2>
+    <!-- EX:
+     p:nth-last-child(2) - Chọn các thẻ p là thẻ con thứ 2, tính từ cuối lên -->
+    <div>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+      <p>nội dung 4</p>
+      <p>nội dung 5</p>
+    </div>
+
+    <h2>:only-child (thẻ con duy nhất)</h2>
+    <!-- EX:
+     p:only-child - Chọn các thẻ p là thẻ con duy nhất -->
+    <!-- Áp dụng được mã CSS -->
+    <div>
+      <p>nội dung 6</p>
+    </div>
+    <!-- Không áp dụng được mã CSS vì có thêm thẻ h3 và nhiều thẻ p, p không đứng duy nhất -->
+    <div>
+      <h3>Tiêu đề 3</h3>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+      <p>nội dung 4</p>
+      <p>nội dung 5</p>
+      <p>nội dung 6</p>
+    </div>
+    <div>
+      <p>nội dung 1</p>
+      <p>nội dung 2</p>
+      <p>nội dung 3</p>
+      <p>nội dung 4</p>
+      <p>nội dung 5</p>
+    </div>
+
+    <h2>Thứ tự ưu tiên CSS selector</h2>
+    <!-- Mức độ ưu tiên Mạnh -> Yếu:
+     1. !important
+     EX: *{color: red !important; }
+     2. inline style (viết trên code HTML)
+     EX: <h1 style="color: brown;" 
+     3. ID(#) selector
+     EX: #line_1 {color: yellow;}
+     4. Class(.) hoặc pseudo-class(:) selector
+     EX: .top {color: green;}
+     5. Element selector(h, p, li, div,...)
+     EX: h1 {color: blue; }
+     6. Universal selector(*): Bộ chọn chung
+     EX: *{color: red; }
+     -->
+  </body>
+</html>

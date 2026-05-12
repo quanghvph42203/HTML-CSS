@@ -1,0 +1,24 @@
+/* p:first-child - Chọn các thẻ p là thẻ con đầu tiên */
+p:first-child {
+  color: red;
+}
+
+/* p:last-child - Chọn các thẻ p là thẻ con cuối cùng */
+p:last-child {
+  color: blue;
+}
+
+/* p:nth-child(2) - Chọn các thẻ p là thẻ con thứ 2 từ trên xuống */
+p:nth-child(2) {
+  color: yellow;
+}
+
+/*  p:nth-last-child(2) - Chọn các thẻ p là thẻ con thứ 2, tính từ cuối lên */
+p:nth-last-child(2) {
+  color: pink;
+}
+
+/* p:only-child - Chọn các thẻ p là thẻ con duy nhất */
+p:only-child {
+  color: blueviolet;
+}
