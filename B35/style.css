@@ -1,0 +1,9 @@
+/* p:hover - Chọn các thẻ p khi di chuột qua */
+p:hover {
+  color: blue;
+}
+
+/* a:active - Chọn các thẻ a khi nhấn giữ chuột */
+a:active {
+  color: green;
+}
