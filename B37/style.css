@@ -1,0 +1,15 @@
+/*  div:empty - Chọn các thẻ div không có nội dung */
+.div1:empty {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+.div2:empty {
+  background-color: red;
+}
+
+/*  #home:target - Chọn thẻ có id="home" khi trên URL có hash tương ứng
+     VD: https://domain.com/#home */
+h2:target {
+  color: blue;
+}
