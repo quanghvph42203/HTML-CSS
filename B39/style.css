@@ -1,0 +1,9 @@
+/* Box model - padding */
+div {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  background-color: red;
+  /* set khoảng đệm 4 phía với 20px: trên - phải - dưới - trái */
+  padding: 20px;
+}
