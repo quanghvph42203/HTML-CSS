@@ -1,0 +1,12 @@
+.box{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid red;
+    margin-bottom: 10px;
+    /* Thuộc tính box-sizing mặc định */
+    box-sizing: content-box;
+}
+.box2{
+    box-sizing: border-box;
+}
