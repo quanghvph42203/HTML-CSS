@@ -1,0 +1,14 @@
+div {
+  /* color: yellow; */
+  background-color: red;
+  width: 80px;
+  height: 80px;
+  /* border tường minh Set chiều rộng giống quy tắc padding đã học */
+  border-width: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: brown;
+  /* border: 20px solid blue; */
+  padding: 20px;
+  /* độ bo viền */
+  border-radius: 30px;
+}
