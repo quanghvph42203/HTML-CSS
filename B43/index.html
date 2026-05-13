@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS Margin Collapse (kết hợp) và cách khắc phục căn bản</h1>
+    <h2>1. Margin Collapse TH1</h2>
+    <!-- + Là hiện tượng chồng lặp thuộc tính margin khi 2 phần tử liền kề cùng thiết lập
+     margin với phần tử còn lại theo chiều dọc -->
+    <div class="box box1">tuhoc1</div>
+    <div class="box box2">tuhoc2</div>
+    <!-- + margin collapse: chú ý theo chiều ngang, các phần tử không bị hiện tượng này -->
+
+    <!-- + Mặc định thẻ <div></div> display của nó là block -->
+    <!-- display: block; - chiếm hết theo chiều ngang 
+         display: inline; - phần tử chiếm vừa bằng nội dung nó chứa   -->
+
+    <span class="item item1">Nội dung 1</span>
+    <span class="item item2">Nội dung 2</span>
+    <span class="item item3">Nội dung 3</span>
+
+    <h2>2. Margin Collapse TH2</h2>
+    <!-- Xảy ra với phần tử có quan hệ cha con
+     + Khi set margin cùng chiều cho thẻ cha và thẻ con thì sẽ bị
+     collapse (kết hợp). Kích thước nào lớn hơn thì quyết định -->
+    <div class="box_parent">
+      <h3 class="box_child">Thẻ h3</h3>
+    </div>
+
+    <h2>3. Cách khắc phục margin collapse</h2>
+    <!-- + Cách đơn giản: Chỉ dàn trang theo 1 chiều nhất quán, từ trên xuống dưới
+     hoặc từ dưới lên trên
+     EX: 
+     .item1{
+     margin-bottom: 120px;
+     }
+     + Cách 2: thêm thuộc tính display: flex; vào thẻ cha
+     EX: 
+     body{
+     display:flex;
+     flex-direction: column;} -->
+  </body>
+</html>
